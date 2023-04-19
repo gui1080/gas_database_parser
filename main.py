@@ -78,7 +78,7 @@ def main():
 
             print("End of unzip step!")
 
-    # read and parse downloaded csv file!
+    # read and parse downloaded csv file! 
     #-------------------------------------------
 
     first_occur = True
