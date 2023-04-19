@@ -15,6 +15,8 @@ import time
 
 def main():
 
+    show_print = True
+
     #-------------------------------------------
     # check if csv file exists
 
@@ -174,10 +176,11 @@ def main():
                             }
                         }
 
-                        print("\n")
-                        print("---------------")
-                        print(json.dumps(data_dict, indent=4))
-                        print("---------------")
+                        if show_print == True:
+                            print("\n")
+                            print("---------------")
+                            print(json.dumps(data_dict, indent=4))
+                            print("---------------")
 
                         final_data = final_data + json.dumps(data_dict, indent=4)
 
@@ -208,10 +211,12 @@ def main():
 
                 first_occur = False
 
-    print("Latest data")
-    print(recent_occur)
-    print("---------------")
+    if show_print == True:
+        print("Latest data")
+        print(recent_occur)
+        print("---------------")
 
+    # outputs json result
     with open("result.json", "w+") as outfile:
         outfile.write(final_data)
 

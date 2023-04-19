@@ -49,4 +49,6 @@ JSON of this data should look like:
 
 Given that *Python 3* is installed and up to date, run:
 
-> python3 xxxxx
+> python3 shooju_task.py
+
+At line 18, there is a *show_print* variable. If set to *True*, the script outputs the JSON file as It is generated. 
